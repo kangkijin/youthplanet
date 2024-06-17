@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, height=device-height, viewport-fit=cover, shrink-to-fit=no">
+		<meta name="title" content="국방통합데이터센터">
+		<meta name="description" content="국방통합데이터센터">
+		<meta name="copyright" content="국방통합데이터센터">
+		<meta name="keywords" content="국방통합데이터센터, 역량관리, 경력개발, 교육, 역량관리시스템, 경력관리">
+		<title>국방통합데이터센터</title>
+		
+		<!-- favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- //favicon -->
+		
+		<!-- [pp] icon -->
+		<link rel="stylesheet" href="../../../src/font-awesome/css/font-awesome.min.css">
+		<!-- [pp] font-awesome 파이어폭스 미출력 에러 대응 -->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+		<!-- [pp] //font-awesome 파이어폭스 미출력 에러 대응 -->
+		<link rel="stylesheet" href="../../../src/remixicon/fonts/remixicon.css">
+		<!-- [pp] //icon -->
+		
+		<!-- css -->
+		<link rel="stylesheet" href="../../../src/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../src/bootstrap-adminLTE/css/AdminLTE.css">
+		<link rel="stylesheet" href="../../../src/bootstrap-adminLTE/css/_all-skins.min.css">
+		<link rel="stylesheet" href="../../../src/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+		<link rel="stylesheet" href="../../../src/dataTables/css/dataTables.bootstrap.min.css">
+		<link rel="stylesheet" href="../../../src/dataTables/css/select.dataTables.min.css">
+		<link rel="stylesheet" href="../../../src/mCustomScrollbar/css/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="../../../src/select2/css/select2.css">
+		<link rel="stylesheet" href="../../../src/apexchart/css/apexcharts.css">
+		<link rel="stylesheet" href="../../../css/dl_global.css">
+		<link rel="stylesheet" href="../../../css/admin/dl_common.css">
+		<link rel="stylesheet" href="../../../css/admin/dl_custom.css">
+		<link rel="stylesheet" href="../../../css/admin/dl_table.css">
+		<link rel="stylesheet" href="../../../css/admin/dl_ui.css">
+		<link rel="stylesheet" href="../../../css/admin/dl_popup.css">
+		<!-- //css -->
+
+		<!-- js -->
+		<script src="../../../src/jquery/js/jquery-3.5.1.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="../../../src/jquery/js/jquery-1.12.3.min.js"></script>
+		<script src="../../../src/jquery/js/html5shiv.js"></script>
+		<script src="../../../src/jquery/js/IE9.js"></script>
+		<script src="../../../src/jquery/js/respond.min.js"></script>
+		<![endif]-->
+		<script src="../../../src/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../../../src/bootstrap-adminLTE/js/adminlte.js"></script>
+		<script src="../../../src/bootstrap-adminLTE/js/demo.js"></script>
+		<script src="../../../src/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+		<script src="../../../src/dataTables/js/jquery.dataTables.min.js"></script>
+		<script src="../../../src/dataTables/js/dataTables.bootstrap.min.js"></script>
+		<script src="../../../src/dataTables/js/dataTables.buttons.min.js"></script>
+		<script src="../../../src/dataTables/js/dataTables.select.min.js"></script>
+		<script src="../../../src/dataTables/js/jszip.min.js"></script>
+		<script src="../../../src/dataTables/js/pdfmake.min.js"></script>
+		<script src="../../../src/mCustomScrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script src="../../../src/select2/js/select2.min.js"></script>
+		<script src="../../../src/apexchart/js/apexcharts.js"></script>
+		<script src="../../../js/admin/pp_ui.js"></script>
+		<!-- //js -->
+	</head>
+
+	<body class="hold-transition skin-red sidebar-mini">
+		<!--[pp] 모달기본 -->
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<!-- [pp] 조직도 선택은 임시문구 입니다. 적절한 이름을 넣어주세요. -->
+					<h4 class="modal-title" id="myModalLabel">조직도 선택</h4>
+				</div>
+				<div class="modal-body">
+					<ul class="ad_showtab round mg_b10">
+						<li>
+							<a href="javascript:void(0);" class="on">소속</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">직급</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">직군</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">직위</a>
+						</li>
+					</ul>
+					<div>
+						<h5 class="section_tit_sm">소속</h5>
+						<div class="pick_list pick_1depth">
+							
+							<p class="check_pick check_all">
+								<input type="checkbox" id="check_all" name="checkall_col">
+								<label for="check_all">전체</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth1" name="check_col">
+								<label for="1depth1">임원</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth2" name="check_col">
+								<label for="1depth2">부동산연구원</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth3" name="check_col">
+								<label for="1depth3">감사</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth4" name="check_col">
+								<label for="1depth4">공사통계본부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth5" name="check_col">
+								<label for="1depth5">혁신경영본부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth6" name="check_col">
+								<label for="1depth6">시장관리본부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth7" name="check_col">
+								<label for="1depth7">산업지원본부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth8" name="check_col">
+								<label for="1depth8">서울지역본부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth9" name="check_col">
+								<label for="1depth9">수도권남부지역본부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth10" name="check_col">
+								<label for="1depth10">수도권북부지역본부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth11" name="check_col">
+								<label for="1depth11">충청지역본부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth12" name="check_col">
+								<label for="1depth12">호남지역본부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth13" name="check_col">
+								<label for="1depth13">부산경남지역본부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="1depth14" name="check_col">
+								<label for="1depth14">대구경북지역본부</label>
+							</p>
+						</div>
+						<div class="pick_list pick_2depth">
+							<p class="check_pick check_all">
+								<input type="checkbox" id="check_all2" name="checkall_col">
+								<label for="check_all2">전체</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="2depth1" name="check_col">
+								<label for="2depth1">도시정비처</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="2depth2" name="check_col">
+								<label for="2depth2">공익정비처</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="2depth3" name="check_col">
+								<label for="2depth3">녹색건축처</label>
+							</p>
+						</div>
+						<div class="pick_list pick_3depth">
+							<p class="check_pick check_all">
+								<input type="checkbox" id="check_all3" name="checkall_col">
+								<label for="check_all3">전체</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth1" name="check_col">
+								<label for="3depth1">건물평가인증부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth2" name="check_col">
+								<label for="3depth2">통할</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth3" name="check_col">
+								<label for="3depth3">소속</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth4" name="check_col">
+								<label for="3depth4">건물평가인증부 녹색건축인증팀</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth5" name="check_col">
+								<label for="3depth5">건물평가인증부 녹색건축인증팀(서울)</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth6" name="check_col">
+								<label for="3depth6">건물평가인증부(서울)</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth7" name="check_col">
+								<label for="3depth7">에너지인증부(서울)</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth8" name="check_col">
+								<label for="3depth8">에너지평가부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth9" name="check_col">
+								<label for="3depth9">에너지평가부 제주사업소</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth10" name="check_col">
+								<label for="3depth10">에너지평가부 건축물관리지원팀(서울)</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth11" name="check_col">
+								<label for="3depth11">에너지평가부 건축물관리지원팀</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth12" name="check_col">
+								<label for="3depth12">녹색건축연구소(TF)(서울)</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth13" name="check_col">
+								<label for="3depth13">녹색건축연구소(TF)</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth14" name="check_col">
+								<label for="3depth14">에너지평가부(서울)</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth15" name="check_col">
+								<label for="3depth15">녹색기후지원부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth16" name="check_col">
+								<label for="3depth16">녹색기후지원부(서울)</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth17" name="check_col">
+								<label for="3depth17">녹색건축정보부</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth18" name="check_col">
+								<label for="3depth18">녹색건축정보부(서울)</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth19" name="check_col">
+								<label for="3depth19">녹색건축정보부 건축행정정보팀</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth20" name="check_col">
+								<label for="3depth20">녹색건축정보부 탄소금융지원팀</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth21" name="check_col">
+								<label for="3depth21">에너지인증부 제로에너지인증팀</label>
+							</p>
+							<p class="check_pick">
+								<input type="checkbox" id="3depth22" name="check_col">
+								<label for="3depth22">에너지인증부</label>
+							</p>
+						</div>
+						<div class="mg_t15 ta_c">
+							<button type="button" class="btn btn-md btn-info">
+								추가하기
+							</button>
+						</div>
+						<div class="pick_result">
+							<p>※ 최대 6개 선택 가능합니다.</p>
+							<ul>
+								<li>
+									<span class="1dpeth">산업지원본부</span>
+									<span class="2dpeth">도시정비처</span>
+									<span class="3dpeth">건물평가인증부</span>
+									<button type="button" class="pick_close">삭제</button>
+								</li>
+								<li>
+									<span class="1dpeth">산업지원본부</span>
+									<span class="2dpeth">도시정비처</span>
+									<button type="button" class="pick_close">삭제</button>
+								</li>
+								<li>
+									<span class="1dpeth">산업지원본부</span>
+									<span class="2dpeth">도시정비처</span>
+									<span class="3dpeth">건물평가인증부</span>
+									<button type="button" class="pick_close">삭제</button>
+								</li>
+								<li>
+									<span class="1dpeth">산업지원본부</span>
+									<span class="2dpeth">녹색건축처</span>
+									<span class="3dpeth">녹색기후지원부(서울)</span>
+									<button type="button" class="pick_close">삭제</button>
+								</li>
+								<li>
+									<span class="1dpeth">산업지원본부</span>
+									<span class="2dpeth">녹색건축처</span>
+									<span class="3dpeth">녹색기후지원부 탄소금융지원팀</span>
+									<button type="button" class="pick_close">삭제</button>
+								</li>
+								<li>
+									<span class="1dpeth">산업지원본부</span>
+									<button type="button" class="pick_close">삭제</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="box-footer ta_c">
+						<button type="button" class="btn btn-md btn-primary">
+							<i class="fa fa-check mg_r5"></i>저장
+						</button>
+						<button type="button" class="btn btn-md btn-danger" data-dismiss="modal" aria-label="Close">
+							<i class="fa fa-close mg_r5"></i>닫기
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--[pp] 모달기본 -->
+	</body>
+</html>

@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="화성시 청소년 통합 시스템">
+		<meta name="description" content="화성시 청소년 통합 시스템">
+		<meta name="copyright" content="화성시 청소년 통합 시스템">
+		<meta name="keywords" content="화성시 청소년 통합 시스템">
+		<title>화성시 청소년 통합 시스템</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../images/favicon.png">
+		<link rel="shortcut icon" href="../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" type="text/css" href="../../src/custom-scrollbar/css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="../../src/select2/css/select2.css">
+		<link rel="stylesheet" type="text/css" href="../../src/swiper/css/swiper.css"> 
+		<link rel="stylesheet" type="text/css" href="../../src/apexchart_v3.34.0/css/apexcharts.css">
+		<link rel="stylesheet" type="text/css" href="../../src/fullcalendar-5.7/css/main.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/dl_global.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/grid.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/formstyle.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/table.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/common_ui.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/ui.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script type="text/javascript" src="../../src/jquery/js/jquery-3.5.1.min.js"></script>
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../src/jquery/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../src/jquery/html5shiv.js"></script>
+		<script type="text/javascript" src="../../src/jquery/IE9.js"></script>
+		<script type="text/javascript" src="../../src/jquery/respond.min.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="../../src/custom-scrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../src/select2/js/select2.min.js"></script> 
+		<script type="text/javascript" src="../../src/apexchart_v3.34.0/js/apexcharts.js"></script>
+		<script type="text/javascript" src="../../src/fullcalendar-5.7/js/main.min.js"></script>
+		<script type="text/javascript" src="../../src/fullcalendar-5.7/js/locales-all.min.js"></script>
+		<script type="text/javascript" src="../../src/fullcalendar-5.7/js/popper.min.js"></script>
+		<script type="text/javascript" src="../../src/swiper/js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/client/pp_common.js"></script>
+		<!--[pp] //js --> 
+
+		<style>
+			.reference_wrapper {
+				padding-left: 300px;
+			}
+			.reference_wrapper .left {
+				position: fixed; left: 0;
+				padding: 15px;
+				width: 300px; height: 100vh;
+				background-color: #f2f2f2;
+				border: 5px solid #ccc;
+				overflow-y: auto;
+			}
+			.html_list a:hover {
+				text-decoration: underline;
+			}
+			.html_list > li {
+				position: relative;
+				padding-left: 10px; padding-bottom: 15px;
+				border-left: 1px solid #000;
+			}
+			.html_list > li > a {
+				display: block; 
+				font-size: 1.6rem; font-weight: 600;
+			}
+			.html_list > li::before {
+				position: absolute; left: -4px; top: 8px;
+				content: "";
+				display: inline-block;
+				margin-right: 5px;
+				width: 8px; height: 8px;
+				background-color: #000;
+			}
+			.html_list > li ul {
+				margin-top: 5px; margin-left: 5px;
+				border-left: 1px solid #000;
+			}
+			.html_list > li li {
+				position: relative;
+				padding-left: 12px;
+			}
+			.html_list > li li > a {
+				font-size: 1.4rem; letter-spacing: -0.08em;
+			}
+			.html_list > li li::before {
+				position: absolute; top: 11px; left: 0;
+				content: "";
+				display: inline-block;
+				width: 6px; height: 1px;
+				background-color: #000;
+			}
+			.html_list .direct_link {
+				position: relative; top: -2px;
+				display: inline-block;
+				margin-left: 8px;
+				width: 20px; height: 20px;
+				font-size: 0; vertical-align: middle;
+				background: url(../../images/client/sub/icon_post_view.png) no-repeat center;
+				background-size: contain;
+			}
+			.html_list .direct_link:hover {
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+			}
+			.html_list > li li .direct_link {
+				width: 12px; height: 12px;
+				background-image: url(../../images/client/formstyle/icon_td_linked.png);
+			}
+
+			.reference_wrapper iframe {
+				width: 100%; height: 100vh;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reference_wrapper">
+			<div class="left">
+				<ul class="html_list">
+					<li>
+						<a href="ui_guide_client.html">UI GUIDE 유아이 가이드<span class="direct_link">바로가기</span></a>
+					</li>
+					<li>
+						<a href="index.html">메인화면</span><span class="direct_link">바로가기</span></a>
+					</li>
+					<li>
+						<a href="search_result.html">통합 검색결과</span><span class="direct_link">바로가기</span></a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">메인화면 > 바로가기 링크</a>
+						<ul>
+							<li>
+								<a href="002_quickpage/02010_alarm_list.html">알림 전체보기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="002_quickpage/02020_population_status.html">화성시 청소년 인구현황<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="002_quickpage/02030_notice_list.html">공지사항 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="002_quickpage/02040_notice_content.html">공지사항 상세보기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="002_quickpage/02050_lookaround_list.html">둘러보기 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="002_quickpage/02060_lookaround_content.html">둘러보기 상세보기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="002_quickpage/02070_youth_map.html">내 주변 청소년 시설<span class="direct_link">바로가기</span></a>
+							</li> 
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);">로그인/회원가입</a>
+						<ul>
+							<li>
+								<a href="001_login_signup/01010_login.html">로그인하기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="001_login_signup/01020_changepw_popup.html">비밀번호 변경 안내 팝업<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="001_login_signup/01030_sleeperinfo_popup.html">휴면 상태 안내 팝업<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="001_login_signup/01040_find_id1.html">아이디 찾기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="001_login_signup/01050_find_id2.html">아이디 찾기2<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="001_login_signup/01060_find_pw1.html">비밀번호 찾기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="001_login_signup/01070_find_pw2.html">비밀번호 찾기2<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="001_login_signup/01080_signup_select.html">회원가입 유형 선택<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="001_login_signup/01090_signup_step1.html">회원가입 step1<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="001_login_signup/01100_signup_step2.html">회원가입 step2<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="001_login_signup/01110_signup_step3.html">회원가입 step3<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="001_login_signup/01120_signup_step4.html">회원가입 step4<span class="direct_link">바로가기</span></a>
+							</li> 
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:void(0);">핵심역량진단</a>
+						<ul>
+							<li>
+								<a href="010_capatest/01010_capatest_list.html">핵심역량진단 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="010_capatest/01020_capatest_do.html">핵심역량진단 진단하기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="010_capatest/01030_capatest_result.html">핵심역량진단 결과보기<span class="direct_link">바로가기</span></a>
+							</li> 
+						</ul>
+					</li> 
+					<li>
+						<a href="javascript:void(0);">프로그램 신청</a>
+						<ul>
+							<li>
+								<a href="020_program/02010_program_list.html">프로그램 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="020_program/02020_program_content.html">프로그램 신청상세<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="020_program/02030_program_apply.html">프로그램 신청하기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="020_program/02040_program_mylist.html">나의 프로그램<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="020_program/02050_satisfaction_survey_popup.html">프로그램 만족도조사 팝업<span class="direct_link">바로가기</span></a>
+							</li> 
+						</ul> 
+					</li>
+					<li>
+						<a href="javascript:void(0);">공간예약·장비대여</a>
+						<ul>
+							<li>
+								<a href="030_reservation/03010_space_list.html">공간예약 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="030_reservation/03020_space_content.html">공간예약 상세보기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="030_reservation/03030_space_reserve_step1.html">공간예약 신청step1<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="030_reservation/03040_space_reserve_step2.html">공간예약 신청step2<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="030_reservation/03050_equipment_list.html">장비대여 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="030_reservation/03060_equipment_content.html">장비대여 상세보기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="030_reservation/03070_equipment_reserve.html">장비대여 신청하기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="030_reservation/03080_reservation_status_list.html">예약 및 대여 신청현황<span class="direct_link">바로가기</span></a>
+							</li>  
+						</ul> 
+					</li>
+					<li>
+						<a href="javascript:void(0);">동아리</a>
+						<ul>
+							<li>
+								<a href="040_club/04010_club_list.html">동아리 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="040_club/04020_join_club.html">동아리 가입하기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="040_club/04030_myclub_list.html">나의 동아리 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="040_club/04040_myclub_content1_home.html">[나의 동아리] - Home<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="040_club/04050_myclub_write.html">동아리 글쓰기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="040_club/04060_myclub_content.html">동아리 글 상세보기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="040_club/04070_myclub_content2_notice.html">[나의 동아리] - 공지사항<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="040_club/04080_myclub_content3_member.html">[나의 동아리] - 회원관리<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="040_club/04090_club_opening.html">동아리 개설 신청<span class="direct_link">바로가기</span></a>
+							</li> 
+						</ul> 
+					</li>
+					<li>
+						<a href="javascript:void(0);">커뮤니티</a>
+						<ul>
+							<li>
+								<a href="050_community/05010_community_list.html">커뮤니티 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="050_community/05020_community_write.html">커뮤니티 게시물 작성<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="050_community/05030_community_content.html">커뮤니티 글 상세보기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="050_community/05040_cardnews_list.html">카드뉴스 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="050_community/05050_cardnews_popup.html">카드뉴스 상세 팝업<span class="direct_link">바로가기</span></a>
+							</li> 
+						</ul> 
+					</li>
+					<li>
+						<a href="javascript:void(0);">정책제안</a>
+						<ul> 
+							<li>
+								<a href="060_policy_proposal/06010_policy_list.html">정책제안 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="060_policy_proposal/06020_policy_content.html">정책제안 상세보기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="060_policy_proposal/06030_policy_write.html">정책제안 제안하기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="060_policy_proposal/06040_proposal_list.html">제안 둘러보기 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="060_policy_proposal/06050_proposal_content.html">제안 둘러보기 상세보기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="060_policy_proposal/06060_myproposal_list.html">나의 정책제안<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="060_policy_proposal/06070_myproposal_content.html">나의 정책제안 상세보기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="060_policy_proposal/06080_policy_data_list.html">정책자료실 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="060_policy_proposal/06090_policy_data_content.html">정책자료실 상세보기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="060_policy_proposal/06100_policy_qna_list.html">정책 Q/A 리스트<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="060_policy_proposal/06110_policy_qna_write.html">정책 Q/A 등록하기<span class="direct_link">바로가기</span></a>
+							</li> 
+							<li>
+								<a href="060_policy_proposal/06120_policy_qna_content.html">정책 Q/A 상세보기<span class="direct_link">바로가기</span></a>
+							</li> 
+						</ul> 
+					</li>
+					<li>
+						<a href="javascript:void(0);">마이페이지</a>
+						<ul>
+							<li>
+								<a href="070_mypage/07010_mypage.html">마이페이지<span class="direct_link">바로가기</span></a>
+							</li> 
+						</ul> 
+					</li>
+				</ul>
+			</div>
+			<iframe src="index.html" frameborder="0"></iframe>
+		</div>
+		
+		<script>
+			$(document).ready(function() {
+				$('a').click(function(e){
+					e.preventDefault();
+					var link = $(this).attr('href');
+					$('iframe').attr('src', link);
+				});
+
+				$('.direct_link').click(function(){
+					window.open($(this).parent().attr('href'));
+					return false;
+				});
+			});
+		</script>
+
+    </body>
+</html>

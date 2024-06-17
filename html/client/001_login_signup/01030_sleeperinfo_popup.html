@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="화성시 청소년 통합 시스템">
+		<meta name="description" content="화성시 청소년 통합 시스템">
+		<meta name="copyright" content="화성시 청소년 통합 시스템">
+		<meta name="keywords" content="화성시 청소년 통합 시스템">
+		<title>화성시 청소년 통합 시스템</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../../images/favicon.png">
+		<link rel="shortcut icon" href="../../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" type="text/css" href="../../../src/custom-scrollbar/css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/select2/css/select2.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/swiper/css/swiper.css"> 
+		<link rel="stylesheet" type="text/css" href="../../../src/apexchart_v3.34.0/css/apexcharts.css">
+		<link rel="stylesheet" type="text/css" href="../../../src/fullcalendar-5.7/css/main.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/dl_global.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/grid.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/formstyle.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/table.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/common_ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/ui.css">
+		<link rel="stylesheet" type="text/css" href="../../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script type="text/javascript" src="../../../src/jquery/js/jquery-3.5.1.min.js"></script>
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../../src/jquery/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/html5shiv.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/IE9.js"></script>
+		<script type="text/javascript" src="../../../src/jquery/respond.min.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="../../../src/custom-scrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../../src/select2/js/select2.min.js"></script> 
+		<script type="text/javascript" src="../../../src/apexchart_v3.34.0/js/apexcharts.js"></script>
+		<script type="text/javascript" src="../../../src/fullcalendar-5.7/js/main.min.js"></script>
+		<script type="text/javascript" src="../../../src/fullcalendar-5.7/js/locales-all.min.js"></script>
+		<script type="text/javascript" src="../../../src/fullcalendar-5.7/js/popper.min.js"></script>
+		<script type="text/javascript" src="../../../src/swiper/js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+
+	</head>
+	<body>
+		<!-- [pp] 팝업창 전체 --> 
+		<section class="pop_wrapper pop_sm_wrap">
+			<section class="pop_header">
+				<h2>휴면 상태 안내</h2>
+				<a href="javascript:void(0);" class="pop_close" title="팝업창 닫기">팝업창 닫기</a>
+			</section>
+			<!-- [pp] 팝업 컨텐츠 영역 -->
+			<section class="pop_content pop_md_content">
+				<div class="changepw_wrap">
+					회원님의 ID는 현재 <strong>휴면 상태</strong>입니다.
+					<p class="mg_b10">#{1년} 이상 통합플랫폼 서비스 미사용 회원님으로 휴면 전환 처리 되었습니다.</p>
+					<p class="bold font_darkgray mg_b15">휴면전환일자 : #{휴면전환일자}</p>
+					<p class="lh_15">[휴면 해제] 버튼을 눌러 분리 보관된 개인정보에 대한 복원이 진행됩니다. <br/>개인정보 복원 후에는 정상적인 서비스 이용을 위하여 다시 로그인을 해주셔야 합니다.</p> 
+				</div>
+				<div class="accountinfo_box">
+					<strong>개인정보 유효기간</strong>
+					선택된 유효기간 동안  통합플랫폼 이용 내역이 없어도 개인정보 분리보관 및 휴면회원으로 전환되지 않습니다. 
+					<div class="mg_t10">
+						<p class="radio_row">
+							<input type="radio" name="radio" id="radio1_1" class="hidden" checked>
+							<label for="radio1_1">5년</label>
+						</p>
+						<p class="radio_row">
+							<input type="radio" name="radio" id="radio1_2" class="hidden">
+							<label for="radio1_2">1년</label>
+						</p>
+					</div>
+				</div>
+			</section>
+			<!-- [pp] 팝업 컨텐츠 영역 -->
+			<section class="pop_footer">
+				<button type="button" class="btn_round btn_md btn_positive1">휴면 해제</button>
+			</section>
+			<!-- [pp] //팝업창하단 버튼영역 -->
+		</section>
+		<!-- [pp] // 팝업창 전체 -->
+	</body>
+
+</html>

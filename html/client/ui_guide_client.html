@@ -1,0 +1,1858 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=no, address=no">
+		<meta name="title" content="화성시 청소년 통합 시스템">
+		<meta name="description" content="화성시 청소년 통합 시스템">
+		<meta name="copyright" content="화성시 청소년 통합 시스템">
+		<meta name="keywords" content="화성시 청소년 통합 시스템">
+		<title>화성시 청소년 통합 시스템</title>
+
+		<!-- [pp] favicon -->
+		<link rel="apple-touch-icon" href="../../images/favicon.png">
+		<link rel="shortcut icon" href="../../images/favicon.ico">
+		<!-- [pp] //favicon -->
+
+		<!-- [pp] css -->
+		<link rel="stylesheet" type="text/css" href="../../src/custom-scrollbar/css/jquery.mCustomScrollbar.css">
+		<link rel="stylesheet" type="text/css" href="../../src/magnetic-popup/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="../../src/select2/css/select2.css">
+		<link rel="stylesheet" type="text/css" href="../../src/swiper/css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="../../css/dl_global.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/grid.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/formstyle.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/table.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/common_ui.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/ui.css">
+		<link rel="stylesheet" type="text/css" href="../../css/client/popup.css">
+		<!-- [pp] //css -->
+
+		<!--[pp] js -->
+		<script type="text/javascript" src="../../src/jquery/js/jquery-3.5.1.min.js"></script>
+
+		<!--[if lt IE 9]>
+		<script type="text/javascript" src="../../src/jquery/js/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../../src/jquery/js/html5shiv.js"></script>
+		<script type="text/javascript" src="../../src/jquery/js/IE9.js"></script>
+		<script type="text/javascript" src="../../src/jquery/js/respond.min.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="../../src/custom-scrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="../../src/magnetic-popup/js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="../../src/select2/js/select2.min.js"></script>
+		<script type="text/javascript" src="../../src/swiper/js/swiper.min.js"></script>
+		<script type="text/javascript" src="../../js/client/pp_common.js"></script>
+		<!--[pp] //js -->
+
+	</head>
+	<body>
+
+		<!-- [pp] 로딩중 화면 -->
+		<div id="loading" style="display: none;">
+			<p id="loading_image">
+				<img src="../../images/loading.gif" alt="Loading..."><br>
+				<span>Loading</span>
+			</p>
+		</div>
+		<!-- [pp] //로딩중 화면 -->
+
+		<!--[pp] skip nav -->
+		<nav class="skip_nav">
+			<a href="#gnb_skip">주요메뉴 바로가기</a>
+			<a href="#container_skip">본문영역 바로가기</a>
+		</nav>
+		<!--[pp] //skip nav -->
+
+		<!-- [pp] 푸터를 제외한 전체페이지 -->
+		<div class="page_wrap subpage subpage1"> 
+			
+			<div class="page_toparea">
+				<!-- [pp] header -->
+				<header class="header_wrap">
+					<div class="grid_content">
+						<!-- [pp] logo, login, alarm, admin, sitemap -->
+						<div class="header_top">
+							<h1 class="header_logo">
+								<a href="javascript:void(0);">
+									<img src="../../images/client/common/header_logo.svg" alt="화성시 청소년 통합 시스템">
+								</a>
+							</h1>
+							<ul class="header_left">
+								<li>
+									<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+									<!-- [pp] 로그인/로그아웃 버튼 :
+									<a href="javascript:void(0);" class="btn_log btn_login">로그인</a>
+									<a href="javascript:void(0);" class="btn_log btn_logout">로그아웃</a>
+									-->
+								</li>
+								<li>
+									<a href="javascript:void(0);">회원가입</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn_alarm">알림<span>1</span><strong></strong></a>
+								</li>
+							</ul>
+							<a href="javascript:void(0);" class="btn_admin">관리자페이지로 이동</a>
+							<button type="button" class="btn_sitemap">사이트맵</button>
+							<button type="button" class="btn_menu" title="모바일 메뉴">
+								메뉴보기<span></span><span></span><span></span>
+							</button>
+						</div>
+						<!-- [pp] //logo, login, alarm, admin, sitemap -->
+						<!-- [pp] gnb -->
+						<div class="header_bottom">
+							<nav id="gnb_skip" class="gnb_wrap" tabindex="0">
+								<ul class="gnb_list">
+									<li class="gnb_1depth gnb01">
+										<a href="javascript:void(0);">핵심역량진단</a>
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">핵심역량 진단하기&#47;결과보기</a></li>
+										</ul>
+									</li>
+									<li class="gnb_1depth gnb02">
+										<a href="javascript:void(0);">프로그램 신청</a>
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">프로그램 신청</a></li>
+											<li><a href="javascript:void(0);">나의 프로그램</a></li>
+										</ul>
+									</li>
+									<li class="gnb_1depth gnb03">
+										<a href="javascript:void(0);">공간예약&#183;장비대여</a>
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">공간예약 신청</a></li>
+											<li><a href="javascript:void(0);">장비대여 신청</a></li>
+											<li><a href="javascript:void(0);">예약 및 대여 신청 현황</a></li>
+										</ul>
+									</li>
+									<li class="gnb_1depth gnb04">
+										<a href="javascript:void(0);">동아리</a>
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">동아리 가입</a></li>
+											<li><a href="javascript:void(0);">나의 동아리</a></li>
+											<li><a href="javascript:void(0);">동아리 개설 신청</a></li>
+										</ul>
+									</li>
+									<li class="gnb_1depth gnb05">
+										<a href="javascript:void(0);">커뮤니티</a>
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">사진</a></li>
+											<li><a href="javascript:void(0);">동영상</a></li>
+											<li><a href="javascript:void(0);">게시글</a></li>
+										</ul>
+									</li>
+									<li class="gnb_1depth gnb06">
+										<a href="javascript:void(0);">정책제안</a>
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">정책제안</a></li>
+											<li><a href="javascript:void(0);">나의 정책제안</a></li>
+											<li><a href="javascript:void(0);">정책자료실</a></li>
+											<li><a href="javascript:void(0);">정책 Q&#47;A</a></li>
+										</ul>
+									</li>
+									<li class="gnb_1depth gnb07">
+										<a href="javascript:void(0);">마이페이지</a>
+										<ul class="gnb_2depth">
+											<li><a href="javascript:void(0);">마이페이지</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!-- [pp] //gnb -->
+					</div>
+				</header>
+				<!-- [pp] //header -->
+			</div>
+
+			<!-- [pp] 사이트맵 -->
+			<div class="sitemap">
+				<div class="grid_content">
+					<div class="sitemap_top"> 
+						<button type="button" class="btn_sitemapclose" title="사이트맵 닫기">닫기</button>
+					</div>
+					<ul class="sitemap_bottom">
+						<li>
+							<strong class="gnb_tit">핵심역량진단</strong>
+							<ul class="sitemap_2depth">
+								<li><a href="javascript:void(0);">핵심역량 진단하기&#47;결과보기</a></li> 
+							</ul>	
+						</li>
+						<li>
+							<strong class="gnb_tit">프로그램 신청</strong>
+							<ul class="sitemap_2depth">
+								<li><a href="javascript:void(0);">프로그램 신청</a></li>
+								<li><a href="javascript:void(0);">나의 프로그램</a></li> 
+							</ul>
+						</li>
+						<li>
+							<strong class="gnb_tit">공간예약&#183;장비대여</strong>
+							<ul class="sitemap_2depth">
+                <li><a href="javascript:void(0);">공간예약 신청</a></li>
+                <li><a href="javascript:void(0);">장비대여 신청</a></li>
+                <li><a href="javascript:void(0);">예약 및 대여 신청 현황</a></li>
+							</ul>
+						</li>
+						<li>
+							<strong class="gnb_tit">동아리</strong>
+							<ul class="sitemap_2depth">
+                <li><a href="javascript:void(0);">동아리 가입</a></li> 
+                <li><a href="javascript:void(0);">나의 동아리</a></li> 
+                <li><a href="javascript:void(0);">동아리 개설 신청</a></li> 
+							</ul>
+						</li> 
+						<li>
+							<strong class="gnb_tit">커뮤니티</strong>
+							<ul class="sitemap_2depth">
+                <li><a href="javascript:void(0);">사진</a></li>
+                <li><a href="javascript:void(0);">동영상</a></li>
+                <li><a href="javascript:void(0);">게시글</a></li> 
+							</ul>
+						</li> 
+						<li>
+							<strong class="gnb_tit">정책제안</strong>
+							<ul class="sitemap_2depth">
+                <li><a href="javascript:void(0);">정책제안</a></li>
+                <li><a href="javascript:void(0);">나의 정책제안</a></li>
+                <li><a href="javascript:void(0);">정책자료실</a></li> 
+                <li><a href="javascript:void(0);">정책 Q&#47;A</a></li> 
+							</ul>
+						</li> 
+						<li>
+							<strong class="gnb_tit">마이페이지</strong>
+							<ul class="sitemap_2depth">
+                <li><a href="javascript:void(0);">마이페이지</a></li>  
+							</ul>
+						</li> 
+					</ul>
+				</div>
+			</div>
+			<!-- [pp] //사이트맵 -->
+
+			<!-- [pp] 서브페이지 비주얼 영역 -->
+			<div class="subpage_visual gnb01 on">
+				<div class="grid_content"> 
+					<h2>유아이 가이드</h2> 
+
+          <!-- gnb01 ~ gnb07 --> 
+					<!-- <h2>프로그램 신청</h2> -->
+					<!-- <h2>공간예약 · 장비대여</h2> -->
+					<!-- <h2>동아리</h2>  -->
+					<!-- <h2>커뮤니티</h2>  -->
+					<!-- <h2>정책제안</h2>  -->
+					<!-- <h2>마이페이지</h2>  -->
+
+					<!-- shortcuts -->
+					<!-- <h2>바로가기</h2>  -->
+
+          <!-- login -->
+					<!-- <h2>로그인</h2>  -->
+
+          <!-- signup -->
+					<!-- <h2>회원가입</h2>  -->
+
+				</div>
+				<!-- [pp] lnb 영역 -->
+				<nav class="lnb_wrap">
+					<div class="grid_content">
+						<ul class="lnb_list">
+							<li class="on">
+								<a href="javascript:void(0);">sub1</a>	
+							</li>
+							<li>
+								<a href="javascript:void(0);">sub2</a>	
+							</li>
+							<li>
+								<a href="javascript:void(0);">sub3</a>	
+							</li>
+						</ul>
+						<div class="main_searchwrap header">
+							<input type="text" class="form_style" placeholder="찾고 싶은 키워드를 입력해 주세요.">
+							<button type="button" class="main_search">검색</strong>
+						</div>
+					</div>	
+				</nav>
+				<!-- [pp] //lnb 영역 -->
+			</div>
+			<!-- [pp] //서브페이지 비주얼 영역 --> 
+
+			<!-- [pp] 메인컨텐츠 영역 -->
+			<main id="container_skip" class="contents_wrap fadeup" tabindex="0">
+				<div class="grid_content">
+					<section class="section_area section_toparea">
+						<h3 class="ui_tit">### 전체 설정</h3>
+						<div class="ui_box">
+							<ul class="list_line">
+								<li>제목 폰트 컬러는 #222&#40; <span class="ui_font_color" style="background: #222;"></span> &#41; 입니다.</li>
+								<li>기본 폰트 컬러는 #666&#40; <span  class="ui_font_color" style="background: #666;"></span> &#41; 입니다.</li>
+								<li>placeholder 컬러는 #666&#40; <span  class="ui_font_color" style="background: #666;"></span> &#41; 입니다.</li>
+								<li>중요 안내 폰트 컬러는 #e61b3c&#40; <span  class="ui_font_color" style="background: #e61b3c;"></span> &#41; 입니다.</li>
+								<li>hover시 폰트 컬러는 #58b8e6&#40; <span  class="ui_font_color" style="background: #58b8e6;"></span> &#41; 입니다.</li>
+							</ul>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">제목명</h3>
+						<div class="ui_box">
+							<h3 class="section_tit_lg">대제목 입니다.</h3>
+							<h3 class="section_tit_md">중제목 입니다.</h3>
+							<h3 class="section_tit_sm">소제목 입니다.</h3>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">리스트 스타일</h3>
+						<div class="ui_box">
+							<ul class="list_rec">
+								<li>list_rec 입니다.</li> 
+							</ul>
+							<ul class="list_dot">
+								<li>list_dot 입니다.</li> 
+							</ul>
+							<ul class="list_dot list_dot_gray">
+								<li>list_dot list_dot_gray 입니다.</li> 
+							</ul>
+							<ul class="list_dot_sm">
+								<li>list_dot_sm 입니다.</li> 
+							</ul>
+							<ul class="list_line">
+								<li>list_line 입니다.</li> 
+							</ul>
+							<ul class="list_no">
+								<li><span>1&#41;</span>list_no 입니다.</li> 
+							</ul>
+							<ul class="info_list">
+								<li>
+									<strong class="tit">제목</strong>
+									내용입니다
+								</li>
+							</ul>
+							<ul class="list_number">
+								<li>
+									<span>1</span>list_number 입니다.
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">토탈 텍스트</h3>
+						<div class="ui_box">
+							<!--<div class="infotop_box mg_b0">팁 박스 입니다. 기본적으로 margin-bottom=3em; 입니다. 현재는 mg_b0 클래스로 margin값을 없애준 상태 입니다.</div>-->
+							<p class="total_count">
+								<strong>Total</strong>전체 1건 / 승인 0건 / 승인대기 1건 / 반려 0건 / 신청취소 0건
+							</p>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">버튼 &#40;크기/모양&#41;</h3>
+						<div class="ui_box">
+							<button type="button" class="btn btn_xs">btn_xs</button>
+							<button type="button" class="btn btn_sm">btn_sm</button>
+							<button type="button" class="btn btn_md">btn_md</button>
+							<button type="button" class="btn btn_lg">btn_lg</button>
+							<hr/>
+							<button type="button" class="btn btn_md">btn</button>
+							<button type="button" class="btn_round btn_md">btn_round</button>
+							<button type="button" class="btn_circle btn_md">btn_circle</button>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">
+							버튼 &#40;색상&#41;<br/>
+							<small>
+								※ 긍정1,부정1은 단독으로 쓰일때 혹은 강한 긍정/부정일때 사용함.
+							</small><br/>
+							<small>
+								※ 긍정2,부정2는 버튼이 여러개일때 의미에 맞게 사용함.
+							</small>
+						</h3>
+						<div class="ui_box">
+							<button type="button" class="btn btn_md btn_positive1">btn_positive1 : 긍정1</button>
+							<button type="button" class="btn btn_md btn_positive2">btn_positive2 : 긍정2</button>
+							<button type="button" class="btn btn_md btn_negative1">btn_negative1 : 부정1</button>
+							<button type="button" class="btn btn_md btn_negative2">btn_negative2 : 부정2</button>
+							<button type="button" class="btn btn_md btn_neutral">btn_neutral : 중립</button>
+							<button type="button" class="btn_round btn_sm btn_bo_positive1">btn_bo_positive1 : 테이블 내 긍정1</button>
+							<button type="button" class="btn_round btn_sm btn_bo_positive2">btn_bo_positive2 : 테이블 내 긍정2</button>
+							<button type="button" class="btn_round btn_sm btn_bo_negative1">btn_bo_negative1 : 테이블 내 부정1</button>
+							<button type="button" class="btn_round btn_sm btn_bo_negative2">btn_bo_negative2 : 테이블 내 부정2</button>
+							<button type="button" class="btn_round btn_sm btn_bo_neutral">btn_bo_neutral : 테이블 내 중립</button>
+							<button type="button" class="btn btn_md btn_positive1 btn_disabled">btn_disabled : 비활성화</button>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">버튼 (종류)</h3>
+						<div class="ui_box"> 
+							<p class="btn_addlike">
+								<input type="checkbox" name="addlike1" id="addlike1_1">
+								<label for="addlike1_1">좋아요</label>
+							</p>
+							<button type="button" class="btn btn_programcard mg_r10 on">카드형</button>
+							<button type="button" class="btn btn_programlist">리스트형</button>
+							<button type="button" class="btn_del">삭제</button>
+							<button type="submit" class="btn_search">검색</button>
+							<button type="button" class="btn_refresh">초기화</button>
+							<button type="button" class="btn btn_setbasic on" title="대표 진로설계 설정">대표설계 설정</button>
+							<button type="button" class="btn btn_setbasic" title="대표 진로설계 설정">대표설계 설정</button> 
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">첨부파일&#40;1&#41; : 관리자측에서 게시한 첨부파일로 사용됩니다.</h3>
+						<div class="ui_box">
+							<div class="adit_top">
+								<p>첨부파일 다운로드</p>
+								<a href="javascript:void(0);" class="filedown_link" title="파일 다운로드">현대L&amp;C지원서류.xisx</a>
+								<a href="javascript:void(0);" class="filedown_link" title="파일 다운로드">현대L&amp;C지원서류.xisx</a>
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">첨부파일&#40;2&#41; : 사용자가 업로드 혹은 수정 가능한 첨부파일로 사용됩니다.</h3>
+						<div class="ui_box">
+							<div class="attach_file_wrapper">
+								<strong>첨부파일</strong>
+								<div class="attach_file_box">
+									<input type="file" id="attach_file" class="hidden">
+									<label for="attach_file" class="attach_file">파일첨부</label>
+								</div>
+								<div class="file_thumbnail">
+									<a href="javascript:void(0);" title="업로드한 파일 제목을 넣어주세요.">
+										<div class="thumbnail_img">
+											<img src="../../images/client/sub/img_ex.png" alt="첨부파일 미리보기 이미지"/>
+										</div>
+										<span class="thumbnail_tit">업로드한 파일 제목 업로드한 파일 제목</span>
+									</a>
+									<button type="button" class="btn btn_del">삭제</button>
+								</div>
+								<div class="file_thumbnail">
+									<a href="javascript:void(0);" title="업로드한 파일 제목을 넣어주세요.">
+										<div class="thumbnail_img">
+											<img src="../../images/client/sub/img_nophoto.png" alt="이미지가 존재하지 않는 파일"/>
+										</div>
+										<span class="thumbnail_tit">이미지 없는 파일</span>
+									</a>
+									<button type="button" class="btn btn_del">삭제</button>
+								</div>
+								<div class="file_thumbnail">
+									<a href="javascript:void(0);" title="업로드한 파일 제목을 넣어주세요.">
+										<div class="thumbnail_img">
+											<img src="../../images/client/sub/img_nofile.png" alt="다른 유형의 파일"/>
+										</div>
+										<span class="thumbnail_tit">문서 / 비디오</span>
+									</a>
+									<button type="button" class="btn btn_del">삭제</button>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">첨부파일(3) : 드래그용</h3>
+						<div class="ui_box">
+							<div class="attachment_box">
+								<div class="top">
+									<label class="btn_round btn_md btn_positive2">
+										파일첨부<input type="file" class="hidden">
+									</label>
+								</div>
+								<div class="inner">
+									<!-- [pp] 파일 없을 경우 추가 :-->
+									<!--
+									<dl class="addfile_info">
+										<dt>
+											상단의 버튼을 클릭하거나 또는 파일 Drag로 추가해주세요.
+										</dt>
+										<dd>
+											<span>hwp</span>
+											<span>doc</span>
+											<span>docx</span>
+											<span>xls</span>
+											<span>xlsx</span>
+											<span>ppt</span>
+											<span>pptx</span>
+											<span>txt</span>
+											<span>png</span>
+											<span>pdf</span>
+											<span>zip</span>
+											<span>mp4</span>
+											<span>jpg</span>
+											<span>jpeg</span>
+											<span>gif</span>
+										</dd>
+									</dl>
+									-->
+									<dl class="addfile_info">
+										<dt>
+											상단의 버튼을 클릭하거나 또는 파일 Drag로 추가해주세요.
+										</dt>
+										<dd>
+											<span>hwp</span>
+											<span>doc</span>
+											<span>docx</span>
+											<span>xls</span>
+											<span>xlsx</span>
+											<span>ppt</span>
+											<span>pptx</span>
+											<span>txt</span>
+											<span>png</span>
+											<span>pdf</span>
+											<span>zip</span>
+											<span>mp4</span>
+											<span>jpg</span>
+											<span>jpeg</span>
+											<span>gif</span>
+										</dd>
+									</dl>
+									<!-- <p class="file_added video">
+										<a href="javascript:void(0);">
+											파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다.mp4
+											<i>&#40;2.02MB&#41;</i>
+										</a>
+									</p>
+									<p class="file_added image">
+										<a href="javascript:void(0);">
+											eRoom Live 강의_20201202.jpg
+											<i>&#40;2.02MB&#41;</i>
+										</a>
+									</p>
+									<p class="file_added document">
+										<a href="javascript:void(0);">
+											eRoom Live 강의_20201202.hwp
+											<i>&#40;2.02MB&#41;</i>
+										</a>
+									</p>
+									<p class="file_added document">
+										<span>
+											파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다.hwp 
+											<i>&#40;2.02MB&#41;</i>
+										</span>
+										<button type="button" class="btn_del">파일 삭제</button>
+									</p>
+									<p class="file_added document file_deleting">
+										<span>
+											eRoom Live 강의_20201202.hwp
+											<i>&#40;2.02MB&#41;</i>
+										</span>
+										<button type="button" class="btn_del">파일 삭제</button>
+									</p> -->
+								</div>
+								<div class="bottom">
+									<div class="test_bar">
+										<p class="wd_p50"></p>
+									</div>
+									<p class="file_volume">34.03KB / 2GB</p>
+								</div>
+								<p class="detail">
+									첨부파일 총 용량 : 0Byte(10개의 파일 / 2GB까지 업로드 가능합니다.)
+									<br/>
+									문서파일(확장자 : hwp, doc, docx, xls, xlsx, ppt, pptx, txt, png, pdf, zip, mp4, jpg, jpeg, gif)만 업로드 가능합니다.
+								</p>
+							</div>
+	
+							<div class="attachment_box disabled" style="margin-top:20px;">
+								<div class="top">
+									<label class="btn_round btn_md btn_positive2">
+										파일첨부<input type="file" class="hidden">
+									</label>
+								</div>
+								<div class="inner">
+									<!-- [pp] 파일 없을 경우 추가 :
+									<dl class="addfile_info">
+										<dt>
+											상단의 버튼을 클릭하거나 또는 파일 Drag로 추가해주세요.
+										</dt>
+										<dd>
+											<span>hwp</span>
+											<span>doc</span>
+											<span>docx</span>
+											<span>xls</span>
+											<span>xlsx</span>
+											<span>ppt</span>
+											<span>pptx</span>
+											<span>txt</span>
+											<span>png</span>
+											<span>pdf</span>
+											<span>zip</span>
+											<span>mp4</span>
+											<span>jpg</span>
+											<span>jpeg</span>
+											<span>gif</span>
+										</dd>
+									</dl>
+									-->
+									<p class="file_added video">
+										<a href="javascript:void(0);">
+											파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다 파일명 입니다 길경우 말줄임 표시합니다.mp4
+											<i>&#40;2.02MB&#41;</i>
+										</a>
+									</p>
+									<p class="file_added image">
+										<a href="javascript:void(0);">
+											eRoom Live 강의_20201202.jpg
+											<i>&#40;2.02MB&#41;</i>
+										</a>
+									</p>
+									<p class="file_added document">
+										<a href="javascript:void(0);">
+											eRoom Live 강의_20201202.hwp
+											<i>&#40;2.02MB&#41;</i>
+										</a>
+									</p>
+									<p class="file_added document">
+										<span>
+											파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다 파일명이 아무리 길어도 모두 보여줍니다.hwp 
+											<i>&#40;2.02MB&#41;</i>
+										</span>
+										<button type="button" class="btn_del">파일 삭제</button>
+									</p>
+									<!-- [pp] 삭제버튼 클릭시 : 'file_deleting' 클래스 추가 -->
+									<p class="file_added document file_deleting">
+										<span>
+											eRoom Live 강의_20201202.hwp
+											<i>&#40;2.02MB&#41;</i>
+										</span>
+										<button type="button" class="btn_del">파일 삭제</button>
+									</p>
+									<!-- [pp] //삭제버튼 클릭시 -->
+								</div>
+								<div class="bottom">
+									<div class="test_bar">
+										<p class="wd_p50"></p>
+									</div>
+									<p class="file_volume">34.03KB / 2GB</p>
+								</div>
+								<p class="detail">
+									첨부파일 총 용량 : 0Byte(10개의 파일 / 2GB까지 업로드 가능합니다.)
+									<br/>
+									문서파일(확장자 : hwp, doc, docx, xls, xlsx, ppt, pptx, txt, png, pdf, zip, mp4, jpg, jpeg, gif)만 업로드 가능합니다.
+								</p>
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">로딩박스</h3>
+						<div class="ui_box">
+							<div class="boxloading_wrap" style="height:200px;">
+								<div class="boxloading">
+									<img src="../../images/boxloading.gif" alt="로딩중입니다.">
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">오픈이미지</h3>
+						<div class="ui_box">
+							<a class="openimg" href="../../images/client/sub/img_ex.png">
+								<img src="../../images/client/sub/img_ex.png" alt="예제이미지">
+							</a>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">프로그램 이미지 없을때 사용.</h3>
+						<div class="ui_box">
+							<img src="../../images/client/sub/img_nopreview.png" alt="이미지 없습니다">
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">프로필 이미지 없을때 사용.</h3>
+						<div class="ui_box">
+							<img src="../../images/client/sub/img_noprofile.png" alt="이미지가 없습니다">
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">결과 없음.</h3>
+						<div class="ui_box">
+							<h4 class="mg_b5">1. 기본 : 기본 높이값 적용.</h4>
+							<div class="nocnt_box" style="margin-bottom: 10px;">
+								<p>
+									검색결과가 없습니다.
+								</p>
+								<!-- [pp] 텍스트 : 
+								<p>등록된 프로그램이 없습니다.</p>
+								<p>로그인이 필요한 서비스입니다. 로그인 후 이용해주세요.</p>
+								-->
+							</div> 
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">Button Area</h3>
+						<div class="ui_box">
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">1. 페이지 하단 버튼 영역 : </h4>
+							<div class="btn_area">
+								<a href="javascript:void(0);" class="btn_round btn_lg btn_positive1">버튼</a>
+								<a href="javascript:void(0);" class="btn_round btn_lg btn_positive2">버튼</a>
+							</div>
+
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">2. 대제목 옆 버튼 영역 :</h4>
+							<div class="btn_rowposition">
+								<h3 class="section_tit_lg">btn_rowposition : 대제목 + 버튼</h3>
+								<div class="inner">
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive1">버튼</a>
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive2">버튼</a>
+								</div>
+							</div>
+							<div class="btn_rowposition rowposition_lg">
+								<h3 class="section_tit_lg">rowposition_lg : 가로 1024px 부터 버튼 내려감</h3>
+								<div class="inner">
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive1">버튼</a>
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive2">버튼</a>
+								</div>
+							</div>
+							<div class="btn_rowposition rowposition_md">
+								<h3 class="section_tit_lg">rowposition_md : 가로 768px 부터 버튼 내려감</h3>
+								<div class="inner">
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive1">버튼</a>
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive2">버튼</a>
+								</div>
+							</div>
+							<div class="btn_rowposition rowposition_sm">
+								<h3 class="section_tit_lg">rowposition_sm : 가로 480px 부터 버튼 내려감</h3>
+								<div class="inner">
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive1">버튼</a>
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive2">버튼</a>
+								</div>
+							</div>
+							<div class="btn_rowposition">
+								<h4 class="section_tit_md">btn_rowposition : 중제목 + 버튼</h4>
+								<div class="inner">
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive1">버튼</a>
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive2">버튼</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">Total</h3>
+						<div class="ui_box">
+							<div class="search_toggle_row" style="margin-bottom: 0;">
+								<div class="searchtoggle_left">
+									<p class="total_count"><strong>Total</strong>20</p>
+								</div>
+								<div class="searchtoggle_right">
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive1">버튼</a>
+									<a href="javascript:void(0);" class="btn_round btn_md btn_positive2">버튼</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">페이징&#40;일반&#41;</h3>
+						<div class="ui_box">
+							<!-- [pp] paging -->
+							<div class="paging_wrap">
+								<a href="javascript:void(0);" title="처음페이지" class="page_con first_page">처음페이지</a>
+								<a href="javascript:void(0);" title="이전페이지" class="page_con pre_page">이전페이지</a>
+								<a href="javascript:void(0);" class="active">1</a>
+								<a href="javascript:void(0);">2</a>
+								<a href="javascript:void(0);">3</a>
+								<a href="javascript:void(0);">4</a>
+								<a href="javascript:void(0);">5</a>
+								<a href="javascript:void(0);" title="다음페이지" class="page_con next_page">다음페이지</a>
+								<a href="javascript:void(0);" title="마지막페이지" class="page_con last_page">마지막페이지</a>
+							</div>
+							<!-- [pp] //paging -->
+						</div>
+					</section>
+					
+					<section class="section_area">
+						<h3 class="ui_tit">Input</h3>
+						<div class="ui_box">
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">1.기본</h4>
+							<input type="text" class="form_style wd_p100" placeholder="기본 input">
+
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">2.달력</h4>
+							<p class="search_day pd_l0">
+								<input type="text" class="form_style" placeholder="시작일" title="시작일">
+								<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+							</p>
+
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">3.달력 + 제목</h4>
+							<div class="search_day">
+								<strong>시작일</strong>
+								<input type="text" class="form_style" placeholder="시작일" title="시작일">
+								<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+							</div>
+
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">4.달력 : 시작일/종료일 포함</h4>
+							<div class="search_period">
+								<strong>모집일</strong>
+								<div class="search_day wd_90">
+									<input type="text" class="form_style" placeholder="시작일" title="시작일">
+									<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+								</div>
+								<span>~</span>
+								<div class="search_day wd_90">
+									<input type="text" class="form_style wd_p100" placeholder="종료일" title="종료일">
+									<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+								</div>
+							</div>
+							
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">5.select + input</h4>
+							<div class="inputbox_2">
+								<div class="select_form">
+									<label class="select_common">선택</label>
+									<select class="select_custom">
+										<option value="" selected>선택</option>
+										<option value="">사제동행 학습동아리</option>
+										<option value="">학생자치 학습동아리</option>
+									</select>
+								</div>
+								<input type="text" class="form_style" placeholder="학습주제를 입력해주세요">
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">checkbox</h3>
+						<div class="ui_box">
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">1.기본</h4>
+							<p class="check_row">
+								<input type="checkbox" name="checkExample" id="checkExample1_1" class="hidden" checked>
+								<label for="checkExample1_1">사과</label>
+							</p>
+							<p class="check_row">
+								<input type="checkbox" name="checkExample" id="checkExample1_2" class="hidden">
+								<label for="checkExample1_2">바나나</label>
+							</p>
+							<p class="check_row">
+								<input type="checkbox" name="checkExample" id="checkExample1_3" class="hidden" disabled>
+								<label for="checkExample1_3">disabled</label>
+							</p>
+							<br/>
+							<p class="check_row checkform">
+								<input type="checkbox" name="checkExample" id="checkExample1_1" class="hidden" checked>
+								<label for="checkExample1_1">사과</label>
+							</p>
+							<p class="check_row checkform">
+								<input type="checkbox" name="checkExample" id="checkExample1_1" class="hidden" disabled>
+								<label for="checkExample1_1">바나나</label>
+							</p>
+							<p class="check_row checkform">
+								<input type="checkbox" name="checkExample" id="checkExample1_1" class="hidden" checked disabled>
+								<label for="checkExample1_1">사과</label>
+							</p>
+
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">2.상태값 선택</h4>
+							<div class="check_col_wrapper">
+								<ul class="check_col_wrap">
+									<li class="check_col">
+										<input type="checkbox" name="checkall_col" id="checkall_col" checked/>
+										<label for="checkall_col">전체</label>
+									</li>
+									<li class="check_col">
+										<input type="checkbox" name="check_col" id="check_col1_1"/>
+										<label for="check_col1_1">승인대기</label>
+									</li>
+									<li class="check_col">
+										<input type="checkbox" name="check_col" id="check_col1_2"/>
+										<label for="check_col1_2">승인</label>
+									</li>
+									<li class="check_col">
+										<input type="checkbox" name="check_col" id="check_col1_3"/>
+										<label for="check_col1_3">반려</label>
+									</li>
+									<li class="check_col">
+										<input type="checkbox" name="check_col" id="check_col1_4"/>
+										<label for="check_col1_4">신청취소</label>
+									</li>
+									<li class="check_col">
+										<input type="checkbox" name="check_col" id="check_col1_5"/>
+										<label for="check_col1_5">관리자취소</label>
+									</li>
+								</ul>
+							</div>
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">3. check only</h4>
+							<p class="check_only">
+								<input type="checkbox" id="checkonly" name="checkonly" hidden checked>
+								<label for="checkonly"></label>
+							</p>
+							<p class="check_only">
+								<input type="checkbox" id="checkonly2" name="checkonly" hidden>
+								<label for="checkonly2"></label>
+							</p>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">radio</h3>
+						<div class="ui_box">
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">1.기본</h4>
+							<p class="radio_row">
+								<input type="radio" name="radioExample" id="radioExample1_1" class="hidden" checked>
+								<label for="radioExample1_1">예</label>
+							</p>
+							<p class="radio_row">
+								<input type="radio" name="radioExample" id="radioExample1_2" class="hidden">
+								<label for="radioExample1_2">아니오</label>
+							</p>
+							<p class="radio_row">
+								<input type="radio" name="radioExample" id="radioExample1_3" class="hidden" disabled>
+								<label for="radioExample1_3">disabled</label>
+							</p>
+
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">2.답안선택</h4>
+							<p class="radio_no_row">
+								<input type="radio" name="radioExample" id="radioExample2_1" class="hidden" checked>
+								<label for="radioExample2_1"><span>1</span>사과</label>
+							</p>
+							<p class="radio_no_row">
+								<input type="radio" name="radioExample" id="radioExample2_2" class="hidden">
+								<label for="radioExample2_2"><span>2</span>바나나</label>
+							</p>
+							
+							<h4 class="mg_t10 mg_b5 medium font_nightblue">3.변형</h4>
+							<div class="radio_col_wrap">
+								<p class="radio_col">
+									<input type="radio" name="radio_col" id="radio_col1_1" checked/>
+									<label for="radio_col1_1">전체</label>
+								</p>
+								<p class="radio_col">
+									<input type="radio" name="radio_col" id="radio_col1_2"/>
+									<label for="radio_col1_2">승인대기</label>
+								</p>
+								<p class="radio_col">
+									<input type="radio" name="radio_col" id="radio_col1_3"/>
+									<label for="radio_col1_3">승인</label>
+								</p>
+								<p class="radio_col">
+									<input type="radio" name="radio_col" id="radio_col1_4"/>
+									<label for="radio_col1_4">반려</label>
+								</p>
+								<p class="radio_col">
+									<input type="radio" name="radio_col" id="radio_col1_5"/>
+									<label for="radio_col1_5">신청취소</label>
+								</p>
+								<p class="radio_col">
+									<input type="radio" name="radio_col" id="radio_col1_6"/>
+									<label for="radio_col1_6">관리자취소</label>
+								</p>
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">Select</h3>
+						<div class="ui_box">
+							<h4 class="mg_b5 medium font_nightblue">1. 기본</h4>
+							<div class="select_form wd_150">
+								<label class="select_common">주소 선택</label>
+								<select class="select_custom">
+									<option value="" selected>주소 선택</option>
+									<option value="">naver.com</option>
+									<option value="">gmail.com</option>
+								</select>
+							</div>
+
+							<h4 class="mg_t20 mg_b5 medium font_nightblue">2. 검색 셀렉트</h4>
+							<div class="sel_search_row">
+								<select class="select_custom">
+									<option value="" selected>상위 직업/직종</option>
+									<option value="">IT&middot;인터넷</option>
+									<option value="">건설</option>
+									<option value="">경영&middot;사무</option>
+								</select>
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">검색창</h3>
+						<div class="ui_box">
+
+							<div class="search_box">
+								<div class="search_inner">
+									<div class="search_keyword">
+										<strong>키워드</strong>
+										<input type="text" class="form_style" placeholder="검색어를 입력해주세요" title="공지사항 검색">
+									</div>
+								</div>
+								<button type="button" class="btn btn_search">검색</button>
+							</div>
+							
+							<div class="search_box">
+								<div class="search_inner">
+									<div class="search_keyword search_lg_keyword">
+										<strong>조금 긴 키워드</strong>
+										<input type="text" class="form_style" placeholder="검색어를 입력해주세요" title="공지사항 검색">
+									</div>
+								</div>
+								<button type="button" class="btn btn_search">검색</button>
+							</div>
+							
+							<div class="search_box">
+								<div class="search_inner">
+									<div class="search_keyword search_xl_keyword">
+										<strong>조금많이 긴 키워드</strong>
+										<input type="text" class="form_style" placeholder="검색어를 입력해주세요" title="공지사항 검색">
+									</div>
+								</div>
+								<button type="button" class="btn btn_search">검색</button>
+							</div>
+
+							<div class="search_box">
+								<div class="search_inner">
+									<div class="search_select">
+										<div class="select_form">
+											<label>전체</label>
+											<select class="select_custom">
+												<option value="" selected>전체</option>
+												<option value="">제목</option>
+												<option value="">내용</option>
+											</select>
+										</div>
+										<input type="text" class="form_style" placeholder="검색어를 입력해주세요" title="공지사항 검색">
+									</div>
+								</div>
+								<button type="button" class="btn btn_search">검색</button>
+							</div>
+
+							<div class="search_box2">
+								<div class="search_inner">
+									<input type="text" class="form_style" placeholder="검색어를 입력해주세요" title="공지사항 검색">
+								</div>
+								<button type="button" class="btn btn_search">검색</button>
+								<button type="button" class="btn_round btn_refresh">검색 초기화</button>
+							</div>
+
+							<div class="search_box2">
+								<div class="search_inner">
+									<div class="search_select search_xl_select">
+										<div class="select_form">
+											<label>전체</label>
+											<select class="select_custom">
+												<option value="" selected>전체</option>
+												<option value="">제목</option>
+												<option value="">내용</option>
+											</select>
+										</div>
+										<input type="text" class="form_style" placeholder="검색어를 입력해주세요" title="공지사항 검색">
+									</div>
+								</div>
+								<button type="button" class="btn btn_search">검색</button>
+								<button type="button" class="btn_round btn_refresh">검색 초기화</button>
+							</div>
+
+							<div class="search_box3">
+								<div class="search_top">
+									<div class="search_inner">
+										<input type="text" class="form_style" placeholder="검색어를 입력해주세요" title="공지사항 검색">
+									</div>
+									<button type="button" class="btn btn_search">검색</button>
+									<button type="button" class="btn_round btn_details">상세검색</button>
+								</div>
+								<div class="search_detail">
+									<ul>
+										<li>
+											<strong>모집기간</strong>
+											<div>
+												<div class="search_day">
+													<strong>시작일</strong>
+													<input type="text" class="form_style" placeholder="시작일" title="시작일">
+													<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+												</div>
+												<div class="search_day">
+													<strong>종료일</strong>
+													<input type="text" class="form_style" placeholder="종료일" title="종료일">
+													<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+												</div>
+											</div>
+										</li>
+										<li>
+											<strong>선택</strong>
+											<div>
+												<p class="radio_row">
+													<input type="radio" name="radioExample3" id="radioExample3_1" class="hidden" checked>
+													<label for="radioExample3_1">예</label>
+												</p>
+												<p class="radio_row">
+													<input type="radio" name="radioExample3" id="radioExample3_2" class="hidden">
+													<label for="radioExample3_2">아니오</label>
+												</p>
+											</div>
+										</li>
+										<li>
+											<strong>선택</strong>
+											<div>
+												<div class="select_form">
+													<label>전체</label>
+													<select class="select_custom">
+														<option value="" selected>전체</option>
+														<option value="">제목</option>
+														<option value="">내용</option>
+													</select>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div class="btn_area">
+										<button type="button" class="btn_round btn_md btn_refresh">검색 초기화</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="search_box3">
+								<div class="search_top">
+									<div class="search_inner">
+										<div class="search_select">
+											<div class="select_form">
+												<label>전체</label>
+												<select class="select_custom">
+													<option value="" selected>전체</option>
+													<option value="">제목</option>
+													<option value="">내용</option>
+												</select>
+											</div>
+											<input type="text" class="form_style" placeholder="검색어를 입력해주세요" title="공지사항 검색">
+										</div>
+									</div>
+									<button type="button" class="btn btn_search">검색</button>
+									<button type="button" class="btn_round btn_details">상세검색</button>
+								</div>
+								<div class="search_detail">
+									<ul>
+										<li>
+											<strong>모집기간</strong>
+											<div>
+												<div class="search_day">
+													<strong>시작일</strong>
+													<input type="text" class="form_style" placeholder="시작일" title="시작일">
+													<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+												</div>
+												<div class="search_day">
+													<strong>종료일</strong>
+													<input type="text" class="form_style" placeholder="종료일" title="종료일">
+													<a href="javascript:void(0);" class="calendar_open">달력열기</a>
+												</div>
+											</div>
+										</li>
+										<li>
+											<strong>선택</strong>
+											<div>
+												<p class="radio_row">
+													<input type="radio" name="radioExample3" id="radioExample3_1" class="hidden" checked>
+													<label for="radioExample3_1">예</label>
+												</p>
+												<p class="radio_row">
+													<input type="radio" name="radioExample3" id="radioExample3_2" class="hidden">
+													<label for="radioExample3_2">아니오</label>
+												</p>
+											</div>
+										</li>
+										<li>
+											<strong>선택</strong>
+											<div>
+												<div class="select_form">
+													<label>전체</label>
+													<select class="select_custom">
+														<option value="" selected>전체</option>
+														<option value="">제목</option>
+														<option value="">내용</option>
+													</select>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div class="btn_area">
+										<button type="button" class="btn_round btn_md btn_refresh">검색 초기화</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">탭버튼과 카드형,리스트형</h3>
+						<div class="ui_box">
+							<div class="search_toggle_row programlist_row">
+								<div class="searchtoggle_left">
+									<ul class="tab_list2 tab_switch_js pc">
+										<li class="on"><a href="javascript:void(0);">전체</a></li>
+										<li><a href="javascript:void(0);">추천 비교과</a></li>
+										<li><a href="javascript:void(0);">찜목록</a></li>
+										<li><a href="javascript:void(0);">역량1</a></li>
+										<li><a href="javascript:void(0);">역량2</a></li>
+										<li><a href="javascript:void(0);">역량3</a></li>
+									</ul>
+									<div class="select_form tab_select_js wd_150 tab_mobile">
+										<label>전체</label>
+										<select class="select_custom">
+											<option value="" selected="">전체</option>
+											<option value="">추천 비교과</option>
+											<option value="">찜목록</option>
+											<option value="">창의융합</option>
+											<option value="">도전정신</option>
+											<option value="">의사소통</option>
+											<option value="">배려협력</option>
+											<option value="">자기관리</option>
+											<option value="">전문역량</option>
+										</select>
+									</div>
+								</div>
+								<div class="searchtoggle_right">
+									<!-- [pp] 버튼에 클래스 on 으로 활성화  -->
+									<button type="button" class="btn btn_programcard mg_r10 on">카드형</button>
+									<button type="button" class="btn btn_programlist">리스트형</button>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">textarea</h3>
+						<div class="ui_box">
+
+							<h4 class="mg_b5 medium font_nightblue">1. 기본</h4>
+							<textarea rows="4" class="form_style" placeholder="기본 textarea" style="margin-bottom: 20px;"></textarea>
+
+							<h4 class="mg_b5 medium font_nightblue">2. 글자수세기</h4>
+							<div id="letter_count300">
+								<textarea rows="4" class="form_style" placeholder="글자수세기 textarea"></textarea>
+								<span id="letter_counter"></span>
+							</div>
+
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">질의응답 : <small>&#40; Ex. 핵심역량 진단지 &#41;</small>
+						</h3>
+						<div class="ui_box">
+							<dl class="survey_list">
+								<dt><span>1</span>나는 학습할 때 <i class="survey_bar"></i></dt>
+								<dd>
+									<strong>a&#41; 직관에 의존하는 것을 좋아한다.</strong>
+									<div>
+										<p class="radio_row">
+											<input type="radio" name="survey5" id="q5_1" class="hidden" checked>
+											<label for="q5_1">1순위</label>
+										</p>
+										<p class="radio_row">
+											<input type="radio" name="survey5" id="q5_2" class="hidden">
+											<label for="q5_2">2순위</label>
+										</p>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">Tab 스타일</h3>
+						<div class="ui_box">
+							<section class="mg_b20">
+								<h4 class="mg_b10 bold font_nightblue">1. tab_list</h4>
+								<ul class="tab_list tab_switch_js">
+									<li class="on"><a href="javascript:void(0);">기본 Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+								</ul> 
+							</section>
+							<section class="mg_b20">
+								<h4 class="mg_b10 bold font_nightblue">2. tab_list2</h4>
+								<ul class="tab_list2 tab_switch_js">
+									<li class="on"><a href="javascript:void(0);">Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+								</ul>
+							</section>
+							<section class="mg_b20">
+								<h4 class="mg_b10 bold font_nightblue">3. .tab_list, .tab_list2 .tab_responsive : 테블릿(768)부터 모양 변형</h4>
+								<ul class="tab_list tab_responsive tab_switch_js">
+									<li class="on"><a href="javascript:void(0);">Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+								</ul>
+							</section>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">Tab 기능</h3>
+						<div class="ui_box">
+							<section class="mg_b20">
+								<h4 class="mg_b10 bold font_nightblue">1. tab_js, tab_list_js, tab_cnt_js : 기본 텝기능</h4>
+								<div class="tab_js">
+									<ul class="tab_list tab_list_js">
+										<li class="on"><a href="#tab1">Tab1</a></li>
+										<li><a href="#tab2">Tab2</a></li>
+										<li><a href="#tab3">Tab3</a></li>
+										<li><a href="#tab4">Tab4</a></li>
+									</ul>
+									<div class="tab_cnt_js">
+										<div id="tab1">텝 내용입니다1</div>
+										<div id="tab2">텝 내용입니다2</div>
+										<div id="tab3">텝 내용입니다3</div>
+										<div id="tab4">텝 내용입니다4</div>
+									</div>
+								</div>
+							</section>
+							<section class="mg_b20">
+								<h4 class="mg_b10 bold font_nightblue">2. tab_js, tab_select_js, tab_cnt_js</h4>
+								<div class="tab_js">
+									<div class="tab_select_js select_form wd_150">
+										<label class="select_common">Tab1</label>
+										<select class="select_custom">
+											<option value="#select_tab1" selected>Tab1</option>
+											<option value="#select_tab2">Tab2</option>
+											<option value="#select_tab3">Tab3</option>
+											<option value="#select_tab4">Tab4</option>
+										</select>
+									</div>
+									<div class="tab_cnt_js">
+										<div id="select_tab1">텝 내용입니다1</div>
+										<div id="select_tab2">텝 내용입니다2</div>
+										<div id="select_tab3">텝 내용입니다3</div>
+										<div id="select_tab4">텝 내용입니다4</div>
+									</div>
+								</div>
+							</section>
+							<section class="mg_b20">
+								<h4 class="mg_b10 bold font_nightblue">3. tab_switch_js : 텝 모양만 바뀜</h4>
+								<ul class="tab_list tab_switch_js">
+									<li class="on"><a href="javascript:void(0);">Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+									<li><a href="javascript:void(0);">Tab</a></li>
+								</ul>
+							</section>
+							<section class="mg_b20">
+								<h4 class="mg_b10 bold font_nightblue">4. bookmark_js : 책갈피 기능. 스타일 제거 후 사용.</h4>
+								<ul class="tab_list bookmark_js">
+									<li class="on"><a href="#bookmark1">Tab1</a></li>
+									<li><a href="#bookmark2">Tab2</a></li>
+									<li><a href="#bookmark3">Tab3</a></li>
+									<li><a href="#bookmark4">Tab4</a></li>
+								</ul>
+								<div id="bookmark1">
+									<p class="tip_txt" style="height: 100px;">
+										Tab1 클릭시 여기로 이동합니다.
+									</p>
+								</div>
+								<div id="bookmark2" style="height:100px;">
+									<p class="tip_txt" style="height: 100px;">
+										Tab2 클릭시 여기로 이동합니다.
+									</p>
+								</div>
+								<div id="bookmark3" style="height:100px;">
+									<p class="tip_txt" style="height: 100px;">
+										Tab3 클릭시 여기로 이동합니다.
+									</p>
+								</div>
+								<div id="bookmark4" style="height:100px;">
+									<p class="tip_txt" style="height: 100px;">
+										Tab4 클릭시 여기로 이동합니다.
+									</p>
+								</div>
+							</section>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">Accordion&#40;1&#41; : 기본 아코디언기능.
+							<br/>
+							<small class="font_red">
+								※ 기능 : '.accordion_js' 안에 '.acd_list_js' 와 '.acd_cnt_js'로 구분지어 사용.
+							</small>
+							<br/>
+							<small>
+								※ 추가 : 'on' 클래스로 페이지 진입시 열어두기 가능.  
+							</small>
+						</h3>
+						<div class="ui_box">
+							<div class="faqlist_wrap">
+								<dl class="faqlist accordion_js">
+									<dt class="acd_list_js">
+										<span>Q</span>질문입니다. 질문입니다. 질문입니다. 질문입니다. 질문입니다. 질문입니다. 질문입니다. 
+									</dt>
+									<dd class="acd_cnt_js">
+										<span>A</span>
+										<div class="faq_content prewrap">답변입니다. 스페이스바와 엔터값을 그대로표기하고 싶지 않으시면 'prewrap' 클래스명을 제거해주세요. 
+
+	답변입니다. 스페이스바와 엔터값을 그대로표기하고 싶지 않으시면 'prewrap' 클래스명을 제거해주세요.</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">30. Accordion&#40;2&#41; : 테이블 아코디언기능.
+							<br/>
+							<small class="font_red">
+								※ 기능 : '.accordion_js' 안에 '.acd_list_js' 와 '.acd_cnt_js'로 구분지어 사용.
+								<b class="bold">
+									&lt;table&gt; 에 사용시 테이블 분할 필수!!! 
+								</b>
+							</small>
+						</h3>
+						<div class="ui_box">
+							<div class="tbl tbl_col scrollx accordion_js">
+								<table class="tbl_fixed">
+									<caption>공개 자료</caption>
+									<colgroup>
+										<col style="width: 20%">
+										<col style="width: 80%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">No</th>
+											<th scope="col">제목</th>
+										</tr>
+									</thead>
+								</table>
+								<table class="tbl_fixed border_none acd_list_js">
+									<caption>공개 자료</caption>
+									<colgroup>
+										<col style="width: 20%">
+										<col style="width: 80%">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>제목입니다. 제목입니다. 제목입니다. 제목입니다. 제목입니다. 제목입니다.</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="acd_cnt_js">
+									<table class="tbl_fixed border_none">
+										<caption>공개 자료</caption>
+										<colgroup>
+											<col style="width: 20%">
+											<col style="width: 80%">
+										</colgroup>
+										<tbody>
+											<tr>
+												<td colspan="6">
+													<p>내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다. 내용입니다.</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">
+							기본테이블
+							<br/>	
+							<small class="font_red">
+								※ 사용 클래스명 : tbl
+							</small>
+						</h3>
+						<div class="ui_box tbl">
+							<table>
+								<caption>테이블</caption>
+								<colgroup>
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">제목</th>
+										<th scope="col">제목</th>
+										<th scope="col">제목</th>
+										<th scope="col">제목</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">제목</th>
+										<td>내용</td>
+										<td>내용</td>
+										<td>내용</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">
+							가로형 테이블
+							<br/>	
+							<small class="font_red">
+								※ 사용 클래스명 : tbl, tbl_row
+							</small>
+						</h3>
+						<div class="ui_box">
+							
+							<div class="tbl tbl_row tbl_fixed">
+								<table>
+									<caption>테이블</caption>
+									<colgroup>
+										<col style="width: 25%;">
+										<col style="width: 25%;">
+										<col style="width: 25%;">
+										<col style="width: 25%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">제목</th>
+											<th scope="col">제목</th>
+											<th scope="col">제목</th>
+											<th scope="col">제목</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">제목</th>
+											<td>내용</td>
+											<td>내용</td>
+											<td>내용</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">
+							세로형 테이블
+							<br/>	
+							<small class="font_red">
+								※ 사용 클래스명 : tbl, tbl_col
+							</small>
+						</h3>
+						<div class="ui_box">
+
+							<div class="tbl tbl_col tbl_fixed">
+								<table>
+									<caption>테이블</caption>
+									<colgroup>
+										<col style="width: 25%;">
+										<col style="width: 25%;">
+										<col style="width: 25%;">
+										<col style="width: 25%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">제목</th>
+											<th scope="col">제목</th>
+											<th scope="col">제목</th>
+											<th scope="col">제목</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">제목</th>
+											<td>내용</td>
+											<td>내용</td>
+											<td>내용</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">
+							데이터 테이블 <br/>	
+							<small class="font_red">
+								※ 사용 클래스명 : tbl tbl_border
+							</small>
+							<br/>
+							<small>
+								※ 워크넷 진단 테이블로 사용중
+							</small>
+						</h3>
+						<div class="ui_box tbl tbl_border">
+							<table>
+								<caption>테이블</caption>
+								<colgroup>
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">제목</th>
+										<th scope="col">제목</th>
+										<th scope="col">제목</th>
+										<th scope="col">제목</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">제목</th>
+										<td>내용</td>
+										<td>내용</td>
+										<td>내용</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					
+					<section class="section_area">
+						<h3 class="ui_tit">
+							테이블 레이아웃 외 
+							<br/>	
+							<small class="font_red">
+								※ 사용 클래스명 : tbl, tbl_col, tbl_fixed, td_input
+							</small>
+						</h3>
+						<div class="ui_box tbl tbl_col tbl_fixed">
+							<table>
+								<caption>테이블</caption>
+								<colgroup>
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">제목</th>
+										<th scope="col">제목</th>
+										<th scope="col">제목</th>
+										<th scope="col">제목</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row"><b class="font_red">tbl_fixed</b> : table 에 클래스 부여.</th>
+										<td>
+											텍스트가 요렇게 요렇게 길어도 옆칸으로 넘어가지 않게 막아줍니다.
+										</td>
+										<td class="td_input">
+											<button type="button" class="btn_round btn_sm btn_bo_positive1">긍정버튼 단독</button>
+										</td>
+										<td>-</td>
+									</tr>
+									<tr>
+										<th scope="row"><b class="font_red va_t">td_input</b> : td 에 클래스 부여.</th>
+										<td>
+											버튼을 포함한 td 의 padding 값을 줄여줍니다.
+										</td>
+										<td class="td_input">
+											<button type="button" class="btn_round btn_sm btn_bo_positive2">긍정버튼</button>
+										</td>
+										<td class="td_input">
+											<button type="button" class="btn_round btn_sm btn_bo_negative2">부정버튼</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+
+						<br/><br/>
+						<h4 class="ui_stit">테이블 내 사용</h4>
+						<div class="tbl tbl_col tbl_fixed">
+							<table>
+								<caption>테이블</caption>
+								<colgroup>
+									<col style="width: 30%;">
+									<col style="width: 70%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">제목</th>
+										<th scope="col">내용</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">
+											<strong class="fix_post">고정게시물</strong>
+										</th>
+										<td class="ta_l">
+											고정게시물일시 사용해주세요
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="required">
+											필수값
+										</th>
+										<td class="ta_l required">
+											필수값 입니다. 'required' 클래스명 추가해서 사용해주세요.
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											테이블 가로 스크롤 (000px 이하시 스크롤)
+										</th>
+										<td class="ta_l">
+											.scrollx_tbl_xs &#40;500px&#41;<br/> 
+											.scrollx_tbl_sm &#40;600px&#41;<br/>
+											.scrollx_tbl_md &#40;800px&#41;<br/> 
+											.scrollx_tbl_lg &#40;1000px&#41;<br/> 
+											.scrollx_tbl_xl &#40;1200px&#41;<br/> 
+											.scrollx_tbl_xxl &#40;1600px&#41;<br/>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											링크 사용
+										</th>
+										<td class="ta_l">
+											<div class="td_append">
+												<a href="javascript:void(0);">
+													<p>
+														링크 영역입니다. 한줄 이상일때 말줄임 표시 해줍니다.
+													</p>
+												</a>
+												<div class="td_appendicon">
+													<span class="linked">
+														클릭시 이동
+													</span>
+												</div>
+											</div>
+											<div class="td_append">
+												<a href="javascript:void(0);">
+													<p>
+														첨부파일이 있을시 첨부파일 아이콘을 추가하여 사용합니다.
+													</p>
+												</a>
+												<div class="td_appendicon">
+													<span class="filelinked">
+														다운로드 있음
+													</span>
+												</div>
+											</div>
+										</td>
+									</tr> 
+									<tr>
+										<th scope="row">
+											버튼 사용
+										</th>
+										<td class="ta_l">
+											<button type="button" class="btn_round btn_sm btn_bo_negative2">부정은 왼쪽</button>
+											<button type="button" class="btn_round btn_sm btn_bo_positive2">긍정은 오른쪽</button>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">
+											테이블 내 댓글 갯수 표시
+										</th>
+										<td class="ta_l">
+											제목영역입니다.
+											<span class="reply_count">[10]</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">
+							반응형 테이블
+							<br/>	
+							<small>
+								※ 사용 클래스명 : tbl, tbl_col, tbl_lg_responsive
+							</small>
+							<br/>
+							<small class="font_red">
+								※ 반응형 클래스명 : 
+								'.tbl_lg_responsive'&#40;1024&#41;,
+								'.tbl_md_responsive'&#40;768&#41;,
+								'.tbl_sm_responsive'&#40;480&#41;
+							</small>
+						</h3>
+						<div class="ui_box tbl tbl_col tbl_lg_responsive">
+							<table>
+								<caption>테이블</caption>
+								<colgroup>
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+									<col style="width: 25%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">제목제목제목</th>
+										<th scope="col">제목</th>
+										<th scope="col">제목</th>
+										<th scope="col">제목</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td data-th="제목제목제목">내용</td>
+										<td data-th="제목">내용</td>
+										<td data-th="제목">내용</td>
+										<td data-th="제목">내용</td>
+									</tr>
+									<tr>
+										<td data-th="제목">내용</td>
+										<td data-th="제목">내용</td>
+										<td data-th="제목">내용</td>
+										<td data-th="제목">내용</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+					<section class="section_area">
+						<h3 class="ui_tit">박스그리드 : 
+							<br/>
+							<small class="font_red">
+								※ 스타일 : .grid_content > .grid_row > grid_col &#40;'grid_col'과 같은 위치에 사이즈 조절 클래스 추가 : .col_xl_2 .col_lg_3 .col_md_2 .col_sm_3 등&#41;
+							</small>
+						</h3>
+						<div class="ui_box">
+							<div class="grid_row">
+								<div class="grid_col col_xl_2_1 col_lg_3 col_md_2 col_sm_3" style="padding:10px; background: #444; text-align: center; color: beige;">.grid_col .col_xl_2_1 .col_lg_3 .col_md_2 .col_sm_3</div>
+								<div class="grid_col col_xl_2_1 col_lg_3 col_md_2 col_sm_3" style="padding:10px; background: #444; text-align: center; color: beige;">.grid_col .col_xl_2_1 .col_lg_3 .col_md_2 .col_sm_3</div>
+								<div class="grid_col col_xl_2_1 col_lg_3 col_md_2 col_sm_3" style="padding:10px; background: #444; text-align: center; color: beige;">.grid_col .col_xl_2_1 .col_lg_3 .col_md_2 .col_sm_3</div>
+								<div class="grid_col col_xl_2_1 col_lg_3 col_md_2 col_sm_3" style="padding:10px; background: #444; text-align: center; color: beige;">.grid_col .col_xl_2_1 .col_lg_3 .col_md_2 .col_sm_3</div>
+								<div class="grid_col col_xl_2_1 col_lg_3 col_md_2 col_sm_3" style="padding:10px; background: #444; text-align: center; color: beige;">.grid_col .col_xl_2_1 .col_lg_3 .col_md_2 .col_sm_3</div>
+								<div class="grid_col col_xl_2_1 col_lg_3 col_md_2 col_sm_3" style="padding:10px; background: #444; text-align: center; color: beige;">.grid_col .col_xl_2_1 .col_lg_3 .col_md_2 .col_sm_3</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+			<!-- [pp] //메인컨텐츠 영역 -->
+		</div>
+		<!-- [pp] //푸터를 제외한 전체페이지 -->
+
+		<!-- [pp] footer -->
+		<footer class="footer_wrap">
+			<div class="grid_content">
+        <h1>
+          <a href="javascript:void(0);">
+            <img src="../../images/client/common/footer_logo.png" alt="유스플래닛">
+          </a>
+        </h1>
+        <div>
+          <ul class="footer_link">
+            <li><a href="javascript:void(0);" class="privacy">개인정보처리방침</a></li>
+            <li><a href="javascript:void(0);">이용약관</a></li>
+            <li><a href="javascript:void(0);">저작권정책</a></li>
+          </ul>
+          <ul class="footer_info">
+            <li>우&#41; 18372 경기도 화성시 태안로 145</li>
+            <li>Copyright &copy; 화성시여성가족청소년재단. All rights reserved.</li>
+          </ul>
+        </div> 
+        <div class="footer_right"> 
+          <div class="select_form">
+            <label class="select_common">관련기관</label>
+            <select class="select_custom">
+              <option value="" selected="selected">관련기관</option>
+              <option value="">관련기관1</option> 
+              <option value="">관련기관2</option> 
+            </select>
+          </div>
+          <div class="select_form">
+            <label class="select_common">관련 행정기관</label>
+            <select class="select_custom">
+              <option value="" selected="selected">관련 행정기관</option> 
+              <option value="">관련 행정기관1</option> 
+              <option value="">관련 행정기관2</option> 
+            </select>
+          </div> 
+          <ul class="footer_sns">
+            <li><a href="https://www.facebook.com/www.hswf.or.kr" target="_blank" class="facebook">페이스북</a></li>
+            <li><a href="https://www.youtube.com/channel/UCXefCnrtwYz-l8NZ5JSFnag" target="_blank" class="youtube">유튜브</a></li>
+            <li><a href="https://www.instagram.com/hswf_insta/" target="_blank" class="instagram">인스타그램</a></li>
+            <li><a href="https://blog.naver.com/hswf_blog" target="_blank" class="naverblog">네이버블로그</a></li>
+          </ul>
+        </div>
+			</div>
+			<a href="javascript:void(0);" class="move_top" title="페이지 상단으로 이동">TOP</a>
+		</footer>
+		<!-- [pp] //footer -->
+
+	</body>
+
+</html>
